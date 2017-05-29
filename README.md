@@ -1,13 +1,13 @@
 # DeviceConnect-Spec
-Device Connect API 仕様 ([Swagger 2.0](http://swagger.io/specification/) 形式)を定義したファイルを管理します。<br>
-ここで標準化した API を Device Connect は実装します。
+This file defines the Device Connect API specification ([Swagger 2.0](http://swagger.io/specification/) format).<br>
+The API standardized here is realized in Device Connect.
 
-Device Connect システムについては、[こちら](https://github.com/DeviceConnect/DeviceConnect-Docs)を参照してください。<br>
-Device Connect API の作成ガイドラインは[こちら](https://github.com/DeviceConnect/DeviceConnect-Docs/wiki/Specification-Api-Guidelines)を参照してください。
+For Device Connect System, refer to here: (https://github.com/DeviceConnect/DeviceConnect-Docs).<br>
+For Device Connect API developer guidline, refer to here (https://github.com/DeviceConnect/DeviceConnect-Docs/wiki/Specification-Api-Guidelines).
 
 
-# ドキュメントの出力
-ドキュメント作成において、以下のコマンドがインストールされていることを前提に説明を行います。
+# Output of Document
+The Document assumes that the following commands are installed.
 
 * Java
 * cURL
