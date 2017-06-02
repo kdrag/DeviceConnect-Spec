@@ -12,21 +12,21 @@ The Document assumes that the following commands are installed.
 * Java
 * cURL
 
-[DeviceConnect-Experiments](https://github.com/DeviceConnect/DeviceConnect-Experiments) から DeviceConnect Codegen をダウンロードします。
+Download DeviceConnect Codegen from [DeviceConnect-Experiments](https://github.com/DeviceConnect/DeviceConnect-Experiments).
 
 ```
 $ curl -LkO https://github.com/DeviceConnect/DeviceConnect-Experiments/releases/download/codegen-v1.0.0/deviceconnect-codegen-project-1.0.0.dist.zip
 $ unzip deviceconnect-codegen-project-1.0.0.dist.zip
 ```
 
-DeviceConnect-Spec から最新の定義ファイルをダウンロードします。
+Download newest definitions file from DeviceConnect-Spec.
 
 ```
 $ curl -o DeviceConnect-Spec.zip -LkO https://github.com/DeviceConnect/DeviceConnect-Spec/archive/master.zip
 $ unzip DeviceConnect-Spec.zip
 ```
 
-ダウンロードした定義ファイルからドキュメントを作成します。
+Create documentation from downloaded definitions file.
 
 ```
 $ java -Dfile.encoding=UTF-8 -jar ./deviceconnect-codegen-project-1.0.0/bin/deviceconnect-codegen.jar \
@@ -36,22 +36,22 @@ $ java -Dfile.encoding=UTF-8 -jar ./deviceconnect-codegen-project-1.0.0/bin/devi
         --output ./docs
 ```
 
-実行すると`--output`で指定したフォルダにDevice Connect APIのドキュメントが作成されます。
+にDevice Connect API document is folder specified by `--output` at time of execution.
 
-#### 各オプションの説明
+#### Explanation of Options
 
 > `--input-spec-dir`
-> > 定義ファイルが置いてあるフォルダを指定します。
+> > Set the folder with definition file
 >
 > `--output`
-> > ドキュメントを出力する先のフォルダ名を指定します。<br>
-> > 指定されたフォルダが存在しない場合には作成します。
+> > Set the folder where document is output<br>
+> > Create folder if it does not exist
 > 
 > `--lang`
-> > ドキュメントを出力するので、*deviceConnectHtmlDocs*を指定します。
+> > Document is output, so specify*deviceConnectHtmlDocs*
 > 
 > `--display-name`
-> > ドキュメントのタイトルを指定します。
+> > Set document name
 
-上記に記載したオプションが知りたい場合には[こちら](https://github.com/DeviceConnect/DeviceConnect-Experiments/tree/master/DeviceConnectCodegen)を参照してください。
+Please refer to the following to learn more about the options listed above[Here](https://github.com/DeviceConnect/DeviceConnect-Experiments/tree/master/DeviceConnectCodegen).
 
